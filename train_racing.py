@@ -62,8 +62,8 @@ class CarlaEnv(gym.Env):
         """Set the seed for random number generation in the environment."""
         if seed is None:
             seed = np.random.randint(0, 10000)  # Generate a random seed if none is provided
-            random.seed(seed)           # Set the seed for Pythons random module
-            np.random.seed(seed)        # Set the seed for NumPys random number generator
+            random.seed(seed)           # Set the seed for Pythons random module
+            np.random.seed(seed)        # Set the seed for NumPys random number generator
 
         # If CARLA allows setting a random seed (e.g., for procedural generation), set it here
         # self.world.set_seed(seed)  # Uncomment if CARLA has a similar method (CARLA does not currently have this)
@@ -186,8 +186,8 @@ class CarlaEnv(gym.Env):
         # Perform the action
         #print(action)
         control = carla.VehicleControl()
-        control.throttle = action[0]
-        control.steer = action[1]
+        control.steer = action[0]
+        control.throttle = action[1]
         control.brake = action[2]
         self.vehicle.apply_control(control)
         
