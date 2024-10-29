@@ -82,7 +82,7 @@ def learn(env,
           action_repeat=4,
           batch_size=32,
           learning_starts=1000,
-          gamma=0.99,
+          gamma=0.5,
           target_network_update_freq=500,
           model_identifier='agent'):
     """ Train a deep q-learning model.
