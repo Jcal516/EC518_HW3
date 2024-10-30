@@ -22,7 +22,7 @@ except IndexError:
 
 #import carla
 
-def evaluate(env, load_path='agent.pt'):
+def evaluate(env, load_path='behavior.pt'):
     """ Evaluate a trained model and compute your leaderboard scores
 
 	NO CHANGES SHOULD BE MADE TO THIS FUNCTION
